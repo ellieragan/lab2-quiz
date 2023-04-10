@@ -1,0 +1,240 @@
+@media only screen and (max-width: 640px) {
+    /* .mobile-nav { 
+        display: flex;
+        background-color: rgb(216, 199, 183);
+    } */
+
+    /* .laptop-nav .left-menu {
+        display: none;
+    } */
+
+    /* .laptop-nav .right-menu {
+        display: none;
+    } */
+
+    .answers {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+body {
+    background-image: url("https://media.istockphoto.com/id/1326251569/vector/black-and-white-squares-seamless-background.jpg?s=612x612&w=0&k=20&c=yTCRbUabEgmaropN8VoPooccVbvCF69ihYPzmSuDdNI=");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: rgb(233, 220, 207);
+    background-color: rgb(238, 196, 219);
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+#movie {
+    display: none;
+  }
+
+.heading {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: "100px";
+    height: "600px";
+    background-color: rgba(255, 211, 237, 0.767);
+    color: rgb(0, 0, 0);
+    font-family: 'Prompt', sans-serif;
+    padding: 20px;
+}
+
+.ice-cream {
+    width: 100%;
+    
+}
+
+.ice-cream img {
+    object-fit: cover;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+    background-color: rgba(211, 252, 255, 0.767);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.answers {
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    flex-flow: row wrap; 
+    padding: 5px 10px;
+    margin: 5px 5px;
+    justify-content: space-around;
+}
+
+.answers img {
+    height:300px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.answers .img {
+    position: relative;
+    display: flex;
+    height:300px;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;    
+}
+
+.answers img:hover {
+    transition: 0.5s;
+    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(10, 9, 9, 0.336), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.5;
+} 
+
+.answers img:checked {
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.5;
+    margin:10px;
+    padding: 5px;
+}
+
+.answers input:checked {
+    transition: all 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: 10px solid rgb(72, 151, 52);
+}
+
+.answers .button {
+    transition: 0.5s;
+    display: flex;
+    background-color: rgba(211, 252, 255, 0.767);
+    color: rgb(0, 0, 0);
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.answers .button:hover {
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(125, 162, 165, 0.767);
+    color: white;
+}
+
+.answers .button:checked {
+    transition-duration: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(125, 162, 165, 0.767);
+    color: white;
+}
+
+.answers .image .h2 {
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+    margin-right: 15px;
+}
+/* input {
+    visibility:hidden;
+} */
+
+input:checked + label {
+    background: red;
+}
+
+.results {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: "100px";
+    height: "600px";
+    background-color: rgba(255, 211, 237, 0.767);
+    color: rgb(0, 0, 0);
+    font-family: 'Prompt', sans-serif;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.results button {
+    background-color: rgb(0, 0, 0);
+    color:rgb(211, 252, 255);
+    transition-duration: 0.4s;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Playfair Display', serif;
+    height: 100px;
+    width: 200px;
+    padding: 10px 10px;
+    margin: 4px 2px;
+    border: none;
+}
+
+.results button:hover {
+    transition-duration: 0.5s;
+    background-color: rgb(211, 252, 255);
+    color: rgb(0, 0, 0);
+}
+
+label { 
+    display : inline-block;
+    margin  : 10px;
+}
+  
+label input[type="radio"] {
+    display : none; 
+}
+  
+label input[type="radio"] + img {
+    border  : 10px solid transparent;
+}
+  
+.answers.Activ label input[type="radio"] + img {
+    border-color : rgba(231, 189, 255, 0.712);
+}
+  
+.answers.Activ label input[type="radio"]:checked + img {
+    border-color : rgb(107, 35, 107);
+} 
+
+label input[type="radio"] + button {
+    transition-duration: 0.5s;
+    border  : 10px solid transparent;
+}
+      
+.answers.Activ label input[type="radio"] + .button {
+    transition-duration: 0.5s;
+    background-color: rgba(231, 189, 255, 0.712);
+    color: rgb(97, 51, 97);
+}
+      
+.answers.Activ label input[type="radio"]:checked + .button {
+    transition-duration: 0.5s;
+    color: white;
+    background-color: rgba(97, 51, 97, 0.733);
+} 

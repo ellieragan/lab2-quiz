@@ -1,0 +1,240 @@
+<!--
+    websites I used for syntax:
+        https://css-tricks.com/perfect-full-page-background-image/
+        https://www.w3.org/TR/css-flexbox-1/#flex-wrap-property
+        https://www.geeksforgeeks.org/frequent-element-array/
+        https://www.w3schools.com/js/js_switch.asp
+        https://www.tutorialspoint.com/how-to-show-images-with-a-click-in-javascript-using-html
+
+    I got the descriptions for my ice cream results from chatGPT by asking it to write a 
+    paragraph about each of my 5 flavors of ice cream
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&family=Prompt:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="heading">
+            <h1>What kind of Ben and Jerry's ice cream are you?</h1>
+        </div>
+
+        <div class="ice-cream">
+            <img src="https://www.shutterstock.com/image-photo/set-various-ice-cream-scoops-260nw-1281146101.jpg" width=100%; height=275px/>
+        </div>
+
+        <div class="question">
+            <h2>Pick an 80s movie</h2>
+        </div>
+
+        <form class="answers">
+            <label>
+                <input type="radio" name="movie" value="0" class="radioElement"/>
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61CsXp-qnnL.jpg" />    
+            
+            </label>
+            <label>
+                <input type="radio" name="movie" value="4" class="radioElement"/>
+                <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/a39764b3dd2055b6cd783ec77bcab5eb_3cc8ea63-bb5e-4759-bb2b-5b08e2cf3d6c_grande.jpg?v=1573585473" />  
+            </label>
+            <label>
+                <input type="radio" name="movie" value="2" class="radioElement"/>
+                <img src="https://www.lucasfilm.com/app/uploads/IJ1-IA-241_R-480x711.jpg" />
+            </label>
+            <label>
+                <input type="radio" name="movie" value="3" class="radioElement"/>
+                <img src="https://static.metacritic.com/images/products/movies/1/8646bc3958114fef36ecdbdcf7b3dba3.jpg" />
+            </label>
+            <label>
+                <input type="radio" name="movie" value="1" class="radioElement"/>
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61c7U8DqV3L._AC_UF894,1000_QL80_.jpg" />
+            </label>
+        </form>
+
+        <div class="question">
+            <h2> Where are you usually on a Friday night? </h2>
+        </div>
+
+        <form class="answers">
+            <label>
+                <input type="radio" name="friday" value="3" class="radioElement"/>
+                <div class="button">Looking for a dance scene</div>
+            </label>
+            <label>
+                <input type="radio" name="friday" value="0" class="radioElement"/>
+                <div class="button">In the library</div>    
+            </label>
+            <label>
+                <input type="radio" name="friday" value="4" class="radioElement"/>
+                <div class="button">In bed early</div>
+                
+            </label>
+            <label>
+                <input type="radio" name="friday" value="2" class="radioElement"/>
+                <div class="button">Playing pong</div>
+                
+            </label>
+            <label>
+                <input type="radio" name="friday" value="1" class="radioElement"/>
+                <div class="button">Relaxing with friends</div>
+                
+            </label>  
+        </form>
+
+        <div class="question">
+            <h2>Main street breakfast or lunch location of choice:</h2>
+        </div>
+
+        <div class="answers">
+            <label>
+                <input type="radio" name="date" value="1" class="radioElement"/>
+                <img src="https://marvel-b1-cdn.bc0a.com/f00000000283318/admissions.dartmouth.edu/sites/admissions.prod/files/styles/wysiwyg_full_width/public/admissions/wysiwyg/pattietobyfried_8195.jpg?itok=70CwxC2j" />    
+            </label>
+            <label>
+                <input type="radio" name="date" value="2" class="radioElement"/>
+                <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F752a87ac-f661-40e9-824e-eba9e06b6787_1314x1278.jpeg" />    
+            </label>
+            <label>
+                <input type="radio" name="date" value="3" class="radioElement"/>
+                <img src="https://cdn1.locable.com/uploads/resource/file/442835/fill/600x400/22002_11918newsmollysphoto_naomilamf.jpg?timestamp=1662082619" />
+            </label>
+            <label>
+                <input type="radio" name="date" value="4" class="radioElement"/>
+                <img src="https://cdn3.locable.com/uploads/resource/file/927387/fill/800x600/diners-outside.jpg?timestamp=1680414469" />
+            </label>
+            <label>
+                <input type="radio" name="date" value="0" class="radioElement"/>
+                <img src="https://i2.wp.com/www.dgrubs.com/wp-content/uploads/2015/06/IMG_9438.jpg" />    
+            </label>
+        </div>
+
+        <div class="question">
+            <h2> Favorite big Dartmouth weekend? </h2>
+        </div>
+
+        <form class="answers">
+            <label>
+                <input type="radio" name="weekend" value="3" class="radioElement"/>
+                <div class="button">Homecoming</div>
+                
+            </label>
+            <label>
+                <input type="radio" name="weekend" value="4" class="radioElement"/>
+                <div class="button">Halloweekend</div>
+                
+            </label>
+            <label>
+                <input type="radio" name="weekend" value="4" class="radioElement"/>
+                <div class="button">Winter Carnival</div>
+                
+            </label>
+            <label>
+                <input type="radio" name="weekend" value="1" class="radioElement"/>
+                <div class="button">Greenkey</div>
+                
+            </label>
+            <label>
+                <input type="radio" name="weekend" value="0" class="radioElement"/>
+                <div class="button">4th of July weekend</div>
+                
+            </label>        
+        </form>
+
+        <div class="question">
+            <h2>Pick a dog</h2>
+        </div>
+
+        <form class="answers">
+            <label>
+                <input type="radio" name="dog" value="0" class="radioElement"/>
+                <img src="https://t4.ftcdn.net/jpg/02/20/54/99/360_F_220549907_yrrPghjGuKAhSjU37cflubDXsfDwCL11.jpg" />
+                
+            </label>
+            <label>
+                <input type="radio" name="dog" value="1" class="radioElement"/>
+                <img src="https://cdn.pixabay.com/photo/2016/02/03/13/33/bernese-mountain-dog-1177074__340.jpg" />
+                
+            </label>
+            <label>
+                <input type="radio" name="dog" value="2" class="radioElement"/>
+                <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=pexels-pixabay-33053.jpg&fm=jpg" />
+                
+            </label>
+            <label>
+                <input type="radio" name="dog" value="3" class="radioElement"/>
+                <img src="https://cdn.pixabay.com/photo/2019/07/30/05/53/dog-4372036__480.jpg" />
+                
+            </label>
+            <label>
+                <input type="radio" name="dog" value="4" class="radioElement"/>
+                <img src="https://media.istockphoto.com/id/467082005/photo/one-dalmatian-puppy-in-a-field-with-yellow-flowers.jpg?b=1&s=612x612&w=0&k=20&c=ZNm42rz180VjT21x25BZmI9p0mlq8NIku0OBy12eZG8=" />
+                
+            </label>
+        </form>
+
+        <div class="question">
+            <h2> Where on campus would you prefer to study?</h2>
+        </div>
+
+        <form class="answers">
+            <label>
+                <input type="radio" name="study" value="3" class="radioElement"/>
+                <div class="button">Blobby/FFB/1902</div>
+                
+            </label>
+            <label>
+                <input type="radio" name="study" value="0" class="radioElement"/>
+                <div class="button">2FB/3FB/4FB/stacks</div>
+                
+            </label>
+            <label>
+                <input type="radio" name="study" value="2" class="radioElement"/>
+                <div class="button">Novack/Cafe @Baker</div>
+                
+            </label>
+            <label>
+                <input type="radio" name="study" value="4" class="radioElement"/>
+                <div class="button">CECS/Irving</div>
+                
+            </label>
+            <label>
+                <input type="radio" name="study" value="1" class="radioElement"/>
+                <div class="button">Tower Room/Sanborne/1913</div>
+                
+            </label>        
+        </form>
+
+        <div class="results">
+            <button class = "button" id="help">
+                Get results!
+            </button>
+            <h1>
+             
+            </h1>
+            <p>
+                
+            </p>
+            <img id="ice-cream-image0" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/35682_US_IC_Choc-Fudge-Brownie_473ml_Open_Brand-1920px.png" style="height: 250px; width: 250px; display: none;"/>
+            <img id="ice-cream-image1" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/cherry-garcia-2022-landing-open.png" style="height: 250px; width: 250px; display: none;"/>
+            <img id="ice-cream-image2" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Everything%20But%20The...%20Ice%20Cream/everything-but-the-2022-detail.png" style="height: 250px; width: 250px; display: none;"/>
+            <img id="ice-cream-image3" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/The%20Tonight%20Dough%20Ice%20Cream/the-tonight-dough-detail-open.png" style="height: 250px; width: 250px; display: none;"/>
+            <img id="ice-cream-image4" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Strawberry%20Cheesecake%20Ice%20Cream/strawberry-cheesecake-2022-detail.png" style="height: 250px; width: 250px; display: none;"/>
+
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+
+</html>

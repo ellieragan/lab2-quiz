@@ -5,6 +5,9 @@
         https://www.geeksforgeeks.org/frequent-element-array/
         https://www.w3schools.com/js/js_switch.asp
         https://www.tutorialspoint.com/how-to-show-images-with-a-click-in-javascript-using-html
+        https://www.w3schools.com/howto/howto_css_modals.asp
+        https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/
+        https://stackoverflow.com/questions/2434602/setting-width-height-as-percentage-minus-pixels
 
     I got the descriptions for my ice cream results from chatGPT by asking it to write a 
     paragraph about each of my 5 flavors of ice cream
@@ -125,7 +128,7 @@
                 
             </label>
             <label>
-                <input type="radio" name="weekend" value="4" class="radioElement"/>
+                <input type="radio" name="weekend" value="2" class="radioElement"/>
                 <div class="button">Halloweekend</div>
                 
             </label>
@@ -214,18 +217,20 @@
             <button class = "button" id="help">
                 Get results!
             </button>
-            <h1>
-             
-            </h1>
-            <p>
-                
-            </p>
-            <img id="ice-cream-image0" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/35682_US_IC_Choc-Fudge-Brownie_473ml_Open_Brand-1920px.png" style="height: 250px; width: 250px; display: none;"/>
-            <img id="ice-cream-image1" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/cherry-garcia-2022-landing-open.png" style="height: 250px; width: 250px; display: none;"/>
-            <img id="ice-cream-image2" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Everything%20But%20The...%20Ice%20Cream/everything-but-the-2022-detail.png" style="height: 250px; width: 250px; display: none;"/>
-            <img id="ice-cream-image3" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/The%20Tonight%20Dough%20Ice%20Cream/the-tonight-dough-detail-open.png" style="height: 250px; width: 250px; display: none;"/>
-            <img id="ice-cream-image4" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Strawberry%20Cheesecake%20Ice%20Cream/strawberry-cheesecake-2022-detail.png" style="height: 250px; width: 250px; display: none;"/>
+        </div>
 
+        <div id="the-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Ice cream type</h1>
+                <p> description</p>
+                <img id="ice-cream-image0" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/35682_US_IC_Choc-Fudge-Brownie_473ml_Open_Brand-1920px.png" style="height: 250px; width: 200px; display: none;"/>
+                <img id="ice-cream-image1" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/cherry-garcia-2022-landing-open.png" style="height: 250px; width: 200px; display: none;"/>
+                <img id="ice-cream-image2" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Everything%20But%20The...%20Ice%20Cream/everything-but-the-2022-detail.png" style="height: 200px; width: 200px; display: none;"/>
+                <img id="ice-cream-image3" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/The%20Tonight%20Dough%20Ice%20Cream/the-tonight-dough-detail-open.png" style="height: 250px; width: 200px; display: none;"/>
+                <img id="ice-cream-image4" src="https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Strawberry%20Cheesecake%20Ice%20Cream/strawberry-cheesecake-2022-detail.png" style="height: 200px; width: 200px; display: none;"/>
+
+            </div>
         </div>
 
         <script

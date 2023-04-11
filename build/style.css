@@ -81,12 +81,14 @@ body {
 }
 
 .answers img {
+    transition: 0.5s;
     height:300px;
     width: 200px;
     object-fit: cover;
 }
 
 .answers .img {
+    transition: 0.5s;
     position: relative;
     display: flex;
     height:300px;
@@ -162,9 +164,9 @@ li {
     visibility:hidden;
 } */
 
-input:checked + label {
+/* input:checked + label {
     background: red;
-}
+} */
 
 .results {
     position: relative;
@@ -238,3 +240,61 @@ label input[type="radio"] + button {
     color: white;
     background-color: rgba(97, 51, 97, 0.733);
 } 
+
+.modal {
+    font-family: 'Prompt', sans-serif;
+    align-items: center;
+    display: none;
+    /* opacity: 0; */
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(47, 79, 79, 0.438);
+    animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    animation-delay: 2s;
+    transition: 5s;
+    }
+
+.modal-content {
+    transition: 0.5s;
+    animation-delay: 2s;
+    animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+    background-color: #f0e9e9;
+    margin: auto;
+    padding: 10px;
+    border: 10px solid rgba(231, 189, 255, 0.712);
+    width: 80%;
+    color: rgb(97, 51, 97);
+    }
+
+.modal-content:hover
+{
+    transition: 0.5s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.close {
+    color: rgb(97, 51, 97);
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+.close:hover{
+    transition: 0.5s;
+    color: rgb(41, 21, 41);
+}
+
+.modal-content img {
+    margin-left: calc(50% - 100px);
+}

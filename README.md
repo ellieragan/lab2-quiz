@@ -2,7 +2,7 @@
 
 See what Ben and Jerry's ice cream flavor you are :)
 
-Deployed URL: https://lab2quiz-ellieragan.onrender.com/
+Deployed URL: https://benandjerrysquiz.onrender.com
 
 
 

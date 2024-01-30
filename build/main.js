@@ -1,7 +1,7 @@
 
 //Finds the value that has been selected most frequently by the user
 function mostFrequent(arr, n) {
- 
+
     let max = 0;
     let max_ele;
     for (let i = 0; i < n; i++) {
@@ -10,20 +10,20 @@ function mostFrequent(arr, n) {
             if (arr[i] == arr[j])
                 count++;
         }
- 
+
         if (count > max) {
             max = count;
             max_ele = arr[i];
         }
     }
- 
+
     return max_ele;
 }
 
 //If results button is pressed:
-$("button").on('click', function(e) {
-    var choices = $("input[type='radio']:checked").map(function(i, radio) {
-        return $(radio).val(); 
+$("button").on('click', function (e) {
+    var choices = $("input[type='radio']:checked").map(function (i, radio) {
+        return $(radio).val();
     }).toArray();
 
     icecreams = ['chocolate fudge brownie', 'cherry garcia', 'everything but the...', 'the tonight dough', 'strawberry cheesecake', 'Error'];
@@ -43,7 +43,7 @@ $("button").on('click', function(e) {
         "<img src='https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/cherry-garcia-2022-landing-open.png'/>",
         "<img src='https://www.benjerry.com/files/live/sites/systemsite/files/Home/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/cherry-garcia-2022-landing-open.png'/>",
     ];
-        
+
     //If not every question has been answered, give error index
     if (choices.length < 6) {
         icecream = 5;
@@ -52,56 +52,55 @@ $("button").on('click', function(e) {
     else {
         icecream = mostFrequent(choices, 6)
     }
-        
-    //Output ice cream type and description (or error)
-    $(".modal-content h1").text(function(n){
-        return icecreams[icecream];
-      });
 
-    $(".modal-content p").text(function(n) {
+    //Output ice cream type and description (or error)
+    $(".modal-content h1").text(function (n) {
+        return icecreams[icecream];
+    });
+
+    $(".modal-content p").text(function (n) {
         return descriptions[icecream];
     });
 });
 
-    const showImageButton = document.getElementById("help");
-    const image0 = document.getElementById("ice-cream-image0"); 
-    const image1 = document.getElementById("ice-cream-image1"); 
-    const image2 = document.getElementById("ice-cream-image2");
-    const image3 = document.getElementById("ice-cream-image3"); 
-    const image4 = document.getElementById("ice-cream-image4");
- 
-    //Also when results button is pressed, show one of 5 images
-    showImageButton.addEventListener("click", () => { 
+const showImageButton = document.getElementById("help");
+const image0 = document.getElementById("ice-cream-image0");
+const image1 = document.getElementById("ice-cream-image1");
+const image2 = document.getElementById("ice-cream-image2");
+const image3 = document.getElementById("ice-cream-image3");
+const image4 = document.getElementById("ice-cream-image4");
 
-        let u = parseInt(icecream)
-        switch (u) {
-            case 0:
-                image0.style.display = "block";
-                break 
-            case 1:
-                image1.style.display = "block"; 
-                break
-            case 2:
-                image2.style.display = "block"; 
-                break
-            case 3:
-                image3.style.display = "block"; 
-                break
-            case 4:
-                image4.style.display = "block"; 
-                break
-            default:
-                console.log(`No ice cream found`);
-        } 
-      });
+//Also when results button is pressed, show one of 5 images
+showImageButton.addEventListener("click", () => {
+
+    let u = parseInt(icecream)
+    switch (u) {
+        case 0:
+            image0.style.display = "block";
+            break
+        case 1:
+            image1.style.display = "block";
+            break
+        case 2:
+            image2.style.display = "block";
+            break
+        case 3:
+            image3.style.display = "block";
+            break
+        case 4:
+            image4.style.display = "block";
+            break
+        default:
+            console.log(`No ice cream found`);
+    }
+});
 
 //Outline selected answer in one color and every non-selected answer in another color
 const myForms = document.querySelectorAll('.answers');
 
-myForms.forEach(function(myForm) {
+myForms.forEach(function (myForm) {
     myForm.onsubmit = e => e.preventDefault();
-    myForm.oninput = () => 
-        { myForm.classList.toggle('Activ', myForm.value !== ''); }  
+    myForm.oninput = () => { myForm.classList.toggle('Activ', myForm.value !== ''); }
 });
 
 //Modal
@@ -109,19 +108,20 @@ var modal = document.getElementById("the-modal");
 var button = document.getElementById("help");
 var span = document.getElementsByClassName("close")[0];
 
-button.onclick = function() {
-  modal.style.display = "block";
+button.onclick = function () {
+    modal.style.display = "block";
 
 }
 
-span.onclick = function() {
-  modal.style.display = "none";
-  
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
+span.onclick = function () {
     modal.style.display = "none";
+    location.reload();
 
-  }
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+
+    }
 }
